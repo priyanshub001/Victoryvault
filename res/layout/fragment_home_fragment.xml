@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home_fragment"
+    android:id="@+id/home_contain"
+
+    >
+
+<!--    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:id="@+id/swipe"-->
+
+<!--        >-->
+
+
+
+
+
+        <ScrollView
+            android:id="@+id/scrolll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
+
+
+
+                <!-- Esport Game Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:src="@drawable/freefirecreate"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <!-- Title -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/esport_game"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:paddingBottom="16dp" />
+
+                <!-- Grid Layout -->
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rowCount="3"
+                    android:columnCount="3"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:columnOrderPreserved="false"
+                    android:horizontalSpacing="8dp"
+                    android:verticalSpacing="8dp"
+                    android:layout_marginStart="0dp"
+                    android:background="@drawable/layout_stroke"
+
+                    >
+
+                <!-- Free Fire Item -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:contentDescription="@string/free_fire"
+                        android:src="@drawable/freefirehome" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Free Fire "
+                        android:gravity="center"
+                        android:layout_marginTop="-1dp"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+
+                        />
+                </LinearLayout>
+
+
+
+                <!-- BGMI Item -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/bgmi" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BGMI"
+                        android:gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:textStyle="bold"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Ludo Item -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/ludo"
+                    android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ludo"
+                        android:gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:textStyle="bold"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- More Games Item -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_margin="8dp"
+                        android:padding="8dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:contentDescription="CS-I"
+                            android:src="@drawable/tdm"
+                            android:scaleType="fitXY"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TDM"
+                            android:gravity="center"
+                            android:layout_marginTop="-1dp"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_margin="8dp"
+                        android:padding="8dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:contentDescription="CS-I"
+                            android:src="@drawable/cs_solo" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CS-I"
+                            android:gravity="center"
+                            android:layout_marginTop="-1dp"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_margin="8dp"
+                        android:padding="8dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:contentDescription="CS-I"
+                            android:src="@drawable/cs_duo" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CS-II"
+                            android:gravity="center"
+                            android:layout_marginTop="-1dp"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_margin="8dp"
+                        android:padding="8dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:contentDescription="CS-I"
+                            android:src="@drawable/cs_trio" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CS-III"
+                            android:gravity="center"
+                            android:layout_marginTop="-1dp"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_margin="8dp"
+                        android:padding="8dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:contentDescription="CS-I"
+                            android:src="@drawable/cs_squad" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CS-IV"
+                            android:gravity="center"
+                            android:layout_marginTop="-1dp"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_margin="8dp"
+                        android:padding="8dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:contentDescription="CS-I"
+                            android:src="@drawable/cs_five" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CS-V"
+                            android:gravity="center"
+                            android:layout_marginTop="-1dp"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_margin="8dp"
+                        android:padding="8dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:contentDescription="CS-I"
+                            android:src="@drawable/arena"
+                            android:scaleType="fitXY"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Arena"
+                            android:gravity="center"
+                            android:layout_marginTop="-1dp"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+
+                            />
+                    </LinearLayout>
+            </GridLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/join_us"
+                    android:textSize="20sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="3dp"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/btnwhatsapp"
+                    android:layout_width="310dp"
+                    android:layout_height="70dp"
+                    android:background="#1B878383"
+                    android:layout_marginTop="10dp"
+
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/whatsapp"
+                        android:scaleType="fitXY"
+                        />
+
+                    <TextView
+                        android:id="@+id/txt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Join Us on Whatsapp"
+                        android:layout_toRightOf="@+id/img1"
+                        android:layout_marginTop="24dp"
+
+                        />
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/arrow"
+                        android:layout_toRightOf="@+id/txt1"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginStart="69dp"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btntelegram"
+                    android:layout_width="310dp"
+                    android:layout_height="70dp"
+                    android:background="#1B878383"
+                    android:layout_marginTop="10dp"
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/telegram"
+                        android:scaleType="fitXY"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="17dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Join Us on Telegram"
+                        android:layout_toRightOf="@+id/img2"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginStart="13dp"
+
+                        />
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/arrow"
+                        android:layout_toRightOf="@+id/txt2"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginStart="71dp"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btninstagram"
+                    android:layout_width="310dp"
+                    android:layout_height="70dp"
+                    android:background="#1B878383"
+                    android:layout_marginTop="10dp"
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/img3"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/instagram"
+                        android:scaleType="centerCrop"
+                        />
+
+                    <TextView
+                        android:id="@+id/txt3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Join Us on Instagram"
+                        android:layout_toRightOf="@+id/img3"
+                        android:layout_marginTop="24dp"
+
+                        />
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/arrow"
+                        android:layout_toRightOf="@+id/txt3"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginStart="66dp"/>
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+</ScrollView>
+<!--    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+
+    </FrameLayout>
