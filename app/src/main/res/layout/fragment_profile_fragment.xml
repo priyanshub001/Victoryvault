@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".profile_fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_blue"
+        >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+
+
+        >
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@color/dark_blue"
+            android:orientation="vertical"
+            >
+
+        </LinearLayout>
+
+
+
+
+
+        <ImageView
+            android:id="@+id/arc"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/arc_1"
+            android:layout_marginTop="185dp"
+
+            />
+
+
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:text="Profile"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textColor="@color/light_blue"-->
+<!--            android:layout_marginStart="144dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            />-->
+        <ImageView
+            android:id="@+id/profilephoto"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/profilelogo"
+            android:layout_marginStart="129dp"
+            android:layout_marginTop="120dp"/>
+
+
+
+
+
+        <TextView
+            android:id="@+id/nameprofiletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/profilephoto"
+            android:textColor="@color/lavender"
+            android:textStyle="bold"
+            android:textSize="20sp"
+
+            android:layout_centerHorizontal="true"
+
+            />
+
+        <TextView
+
+            android:id="@+id/emailprofile"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/profilephoto"
+            android:textColor="@color/bottom_nav_unselected"
+            android:layout_marginTop="29sp"
+
+            android:layout_centerHorizontal="true"
+
+            />
+
+            <RelativeLayout
+                android:id="@+id/rel"
+                android:layout_width="330dp"
+                android:layout_height="60dp"
+                android:background="@drawable/layout_stroke"
+                android:layout_marginTop="17dp"
+                android:layout_below="@+id/emailprofile"
+                android:layout_marginStart="20dp"
+
+                >
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/profilevec"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/profilepage"/>
+        <TextView
+            android:id="@+id/profilee"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Profile"
+            android:layout_toRightOf="@+id/profilepage"
+            android:textColor="@color/lavender"
+            android:textSize="20sp"
+            android:layout_marginStart="50sp"
+            android:layout_marginTop="12dp"
+            />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/arrow"
+            android:layout_toRightOf="@+id/profilee"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="-70dp"/>
+
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/wallet"
+            android:layout_width="330dp"
+            android:layout_height="60dp"
+            android:background="@drawable/layout_stroke"
+            android:layout_marginTop="17dp"
+            android:layout_below="@+id/rel"
+            android:layout_marginStart="20dp"
+
+            >
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/baseline_wallet_24"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/profilewallet"/>
+            <TextView
+                android:id="@+id/wallettxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="My Wallet"
+                android:layout_toRightOf="@+id/profilewallet"
+                android:textColor="@color/lavender"
+                android:textSize="20sp"
+                android:layout_marginStart="50sp"
+                android:layout_marginTop="12dp"
+                />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/arrow"
+                android:layout_toRightOf="@+id/wallettxt"
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="-70dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contact"
+            android:layout_width="330dp"
+            android:layout_height="60dp"
+            android:background="@drawable/layout_stroke"
+            android:layout_marginTop="17dp"
+            android:layout_below="@+id/wallet"
+            android:layout_marginStart="20dp"
+
+            >
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/contactus"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/profilecontact"/>
+            <TextView
+                android:id="@+id/contacttxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Contact Us"
+                android:layout_toRightOf="@+id/profilecontact"
+                android:textColor="@color/lavender"
+                android:textSize="20sp"
+                android:layout_marginStart="50sp"
+                android:layout_marginTop="12dp"
+                />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/arrow"
+                android:layout_toRightOf="@+id/contacttxt"
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="-70dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/aboutlayout"
+            android:layout_width="330dp"
+            android:layout_height="60dp"
+            android:background="@drawable/layout_stroke"
+            android:layout_marginTop="17dp"
+            android:layout_below="@+id/contact"
+            android:layout_marginStart="20dp"
+
+            >
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/aboutus"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/profileabout"/>
+            <TextView
+                android:id="@+id/abouttxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="About Us"
+                android:layout_toRightOf="@+id/profileabout"
+                android:textColor="@color/lavender"
+                android:textSize="20sp"
+                android:layout_marginStart="50sp"
+                android:layout_marginTop="12dp"
+                />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/arrow"
+                android:layout_toRightOf="@+id/abouttxt"
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="-70dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/logoutlayout"
+            android:layout_width="330dp"
+            android:layout_height="60dp"
+            android:background="@drawable/layout_stroke"
+            android:layout_marginTop="17dp"
+            android:layout_below="@+id/aboutlayout"
+            android:layout_marginStart="20dp"
+
+            >
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/logout"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/logout"/>
+            <TextView
+                android:id="@+id/logouttxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Log out"
+                android:layout_toRightOf="@+id/logout"
+                android:textColor="@color/lavender"
+                android:textSize="20sp"
+                android:layout_marginStart="50sp"
+                android:layout_marginTop="12dp"
+                />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/arrow"
+                android:layout_toRightOf="@+id/logouttxt"
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="-70dp"/>
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+    </LinearLayout>
+
+
+
+</FrameLayout>
