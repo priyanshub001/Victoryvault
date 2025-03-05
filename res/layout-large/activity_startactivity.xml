@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".startactivity"
+    android:background="@drawable/backgroundstart"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <ImageView
+        android:id="@+id/start"
+        android:layout_width="600dp"
+        android:layout_height="700dp"
+        android:src="@drawable/startgamelogo"
+        tools:ignore="MissingConstraints"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+
+        />
+
+        <TextView
+            android:id="@+id/playandearn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play and Earn"
+            android:layout_below="@id/start"
+            android:textSize="80sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff"
+            android:shadowColor="#000"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/play_and_earn"
+            android:layout_below="@id/playandearn"
+            android:textSize="49sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#C8F6F4F4"
+            android:layout_marginTop="60dp"
+            android:paddingStart="25dp"
+            tools:ignore="InvalidId,RtlSymmetry"
+
+            />
+        
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/startgame"
+            android:layout_width="450dp"
+            android:layout_height="140dp"
+            android:text="@string/start"
+            android:background="#2196F3"
+            android:textColor="#fff"
+            android:textSize="49sp"
+            android:layout_below="@id/txt1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            />
+
+    </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
