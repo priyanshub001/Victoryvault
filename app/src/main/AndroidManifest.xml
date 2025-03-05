@@ -22,37 +22,37 @@
         android:theme="@style/Theme.VictoryVault"
         tools:targetApi="31">
         <activity
-            android:name=".edit_profile"
+            android:name="com.victoryvault.java.edit_profile"
             android:exported="false" />
         <activity
-            android:name=".image_slider"
+            android:name="com.victoryvault.java.image_slider"
             android:exported="false" /> <!-- <activity -->
         <!-- android:name=".navBotDailog" -->
         <!-- android:exported="false" /> -->
         <!-- Activities -->
         <activity
-            android:name="._enter_otp"
+            android:name="com.victoryvault.java._enter_otp"
             android:exported="false" />
         <activity
-            android:name="._new_password"
+            android:name="com.victoryvault.java._new_password"
             android:exported="false" />
         <activity
-            android:name=".forgett"
+            android:name="com.victoryvault.java.forgett"
             android:exported="false" />
         <activity
-            android:name=".maingame"
+            android:name="com.victoryvault.java.maingame"
             android:exported="false" />
         <activity
-            android:name=".regester"
+            android:name="com.victoryvault.java.regester"
             android:exported="false" />
         <activity
-            android:name=".startactivity"
+            android:name="com.victoryvault.java.startactivity"
             android:exported="false" />
         <activity
-            android:name=".login_activity"
+            android:name="com.victoryvault.java.login_activity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.victoryvault.java.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

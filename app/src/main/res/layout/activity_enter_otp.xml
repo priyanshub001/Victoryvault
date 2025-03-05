@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/enterOtpLayout"
-    tools:context="._enter_otp">
+    tools:context="com.victoryvault.java._enter_otp">
 
     <LinearLayout
         android:layout_width="match_parent"
