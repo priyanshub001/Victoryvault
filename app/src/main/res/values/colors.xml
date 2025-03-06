@@ -6,4 +6,10 @@
     <color name="teal_700">#00796B</color>
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
+    <string name="app_name">VictoryVault</string>
+    <string name="play_and_earn">Play and Earn</string>
+    <string name="start">Start</string>
+    <string name="esport_game">E-Sport Game</string>
+    <string name="free_fire">Free Fire</string>
+    <string name="join_us">Join Us</string>
 </resources>
